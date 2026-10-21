@@ -31,3 +31,7 @@ logs/
 # Database temp files
 data/*.tmp
 data/*.tmp.*
+
+# Local database snapshot
+data/
+target/
