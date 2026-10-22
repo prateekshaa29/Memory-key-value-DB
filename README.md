@@ -283,16 +283,4 @@ OK snapshot saved
 kv-cli [127.0.0.1:6379]> QUIT
 OK bye
 ```
-
 ---
-
-## 11. Resume-Ready Project Showcase
-
-Here are curated, high-impact bullet points to highlight on your resume:
-
-> **Concurrent In-Memory Key-Value Database | Java, Multithreading, TCP Sockets, Maven**
-> - Architected a high-throughput, Redis-inspired concurrent key-value store from scratch in Java 17+, handling multi-client TCP traffic with a bounded thread pool and custom line protocol.
-> - Engineered an $O(1)$ LRU cache using a custom Doubly-Linked List and `ConcurrentHashMap`, designing a two-level locking hierarchy (`ReentrantReadWriteLock` + `ReentrantLock`) to ensure deadlock-free operations and high read concurrency.
-> - Implemented dual-phase TTL expiration combining monotonic nanosecond checks (`System.nanoTime()`) for passive evaluation with a daemon `ScheduledExecutorService` for active memory reclamation.
-> - Developed crash-resilient disk snapshot persistence using an object-independent binary format, featuring background serialization, CRC32 integrity validation, `fsync`, and atomic file swaps.
-> - Designed a comprehensive test suite of 35 JUnit 5 tests, using `CountDownLatch` and `ExecutorService` to validate linearizability, race-condition freedom, and persistence across server restarts.
