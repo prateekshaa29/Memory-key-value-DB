@@ -286,22 +286,6 @@ OK bye
 
 ---
 
-## 10. Automated Test Results
-
-| Test Class | Category | Tests Run | Result | Notes |
-|---|---|---|---|---|
-| `ConcurrencyTest` | Multithreading & Race Conditions | 3 | **PASSED** | 20 threads writing/reading simultaneously, concurrent evictions under load, snapshot consistency |
-| `KVStoreTest` | Core Operations | 8 | **PASSED** | SET, GET, DEL, EXISTS, KEYS, DBSIZE, FLUSHALL, argument validation |
-| `LRUCacheTest` | Eviction Mechanics | 4 | **PASSED** | Eviction order, recency refresh on GET, update on SET, expired key priority |
-| `TTLTest` | Time-to-Live Expiration | 6 | **PASSED** | Monotonic timing, PTTL, immediate expiration, background ExpirationManager |
-| `PersistenceTest` | Snapshot & Recovery | 4 | **PASSED** | Binary serialization, checksum verification, bit corruption rejection |
-| `ClientServerIntegrationTest` | End-to-End Networking | 2 | **PASSED** | Full protocol round-trip, 10 concurrent TCP socket clients |
-| `LiveDemoVerificationTest` | Lifecycle & Restart | 1 | **PASSED** | Server stop, restart, and state restoration verification |
-| `ProtocolTest` | Parsing & Tokenization | 7 | **PASSED** | Quotes, escapes, validation, limits |
-| **TOTAL** | | **35** | **100% PASSED** | All assertions passed in 8.97 seconds |
-
----
-
 ## 11. Resume-Ready Project Showcase
 
 Here are curated, high-impact bullet points to highlight on your resume:
